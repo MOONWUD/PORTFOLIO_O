@@ -26,6 +26,15 @@ header .gnb_wrapper {
   font-size: 60px;
   vertical-align: top;
 }
+header .gnb_wrapper .gnb_item {
+  transform: rotateX(0);
+}
+header .gnb_wrapper .gnb_item:hover {
+  transform: rotateX(180deg);
+}
+header .gnb_wrapper .gnb_item:hover a {
+  color: #555;
+}
 
 /*========== main */
 main {
@@ -40,7 +49,7 @@ main .about {
 }
 main .about .aboutTitle_wrapper {
   width: 100%;
-  padding: 90px;
+  padding: 100px;
   display: flex;
   justify-content: center;
   align-items: center;

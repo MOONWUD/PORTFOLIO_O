@@ -23,6 +23,18 @@ header {
     align-items: center;
     font-size: 60px;
     vertical-align: top;
+
+    .gnb_item {
+      transform: rotateX(0);
+      
+      &:hover {
+        transform: rotateX(180deg);
+
+        a {
+          color: #555;
+        }
+      }
+    }
   }
 }
 
@@ -39,7 +51,7 @@ main {
     /*=== aboutTitle_wrapper */
     .aboutTitle_wrapper {
       width: 100%;
-      padding: 90px;
+      padding: 100px;
       display: flex;
       justify-content: center;
       align-items: center;
