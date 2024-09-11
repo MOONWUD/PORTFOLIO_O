@@ -1,15 +1,79 @@
 /*========== 공통 */
 /*===== font */
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
-
+body {
+  font-family: 'Pretendard', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 700;
+}
 
 /*========== header */
 header {
-  
+  z-index: 9999;
+  width: 100%;
+  height: 90px;
+  padding: 15px 50px;
+  backdrop-filter: blur(12px);
+  position: fixed;
+
+  .gnb_wrapper {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 60px;
+    vertical-align: top;
+  }
 }
 
 
+
 /*========== main */
+main {
+
+  /*===== about */
+  .about {
+    width: 100%;
+    overflow: hidden;
+    
+    /*=== aboutTitle_wrapper */
+    .aboutTitle_wrapper {
+      width: 100%;
+      padding: 90px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 50px;
+      width: calc(2906px * 6);
+      font-size: 250px;
+      animation: about 45s linear infinite;
+
+      @keyframes about {
+        0% {
+          transform: translateX(0);
+        }
+
+        100% {
+          transform: translateX(calc(-2906px * 3))
+        }
+      }
+
+
+      .aboutTitle_item {
+        text-wrap: nowrap;
+        width: 2906px;
+      }
+    }
+
+  }
+
+
+  /*===== skill */
+
+
+  /*===== works */
+  
+}
 
 
 
